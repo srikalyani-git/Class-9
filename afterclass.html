@@ -1,0 +1,81 @@
+<html>
+
+<head>
+    <title>Mood tracker</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: rgb(247, 218, 223);
+            color-scheme: pink, orange, purple;
+        }
+
+        h1 {
+            text-decoration: underline;
+            color: rgb(156, 0, 156);
+            font-weight: bold;
+            text-shadow: 4px 4px 3px rgb(252, 174, 252);
+        }
+
+        #date {
+            background-color: orange;
+        }
+
+        #datediv {
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>What's your mood today!</h1>
+    <form>
+        <fieldset style="background-color: rgb(255, 192, 252); box-shadow: 3px 4px 5px blueviolet;">
+            <legend>Mood today</legend>
+            <br>
+            <div id="datediv">
+                <label>Date:</label> <input type="date" id="date">
+            </div>
+            <br>
+            <label style="font-size: 20px;">How are you feeling:</label>
+            <select style="background-color: orange;">
+                <option><img src="Amazing.png.png">Amazing</option>
+                <option><img src="alright.png.png">Alright</option>
+                <option><img src="mid.png.png">Mid</option>
+                <option><img src="not_good.png.png">Not Good</option>
+                <option><img src="horrible.png.png">Horrible</option>
+            </select>
+            <br>
+            <br>
+            <input type="submit">
+        </fieldset>
+    </form>
+    <h2 style="text-shadow: 3px 2px 3px purple">What it means</h2>
+    <div style="background-color: rgb(0, 199, 133);">
+        <br>
+        <img src="Amazing.png.png" height="55px" width="55px">
+        <h3 id="amazing">Amazing: Your day is going very well and you feel super happy</h3>
+    </div>
+    <div style="background-color: rgb(138, 255, 127);">
+        <br>
+        <img src="alright.png.png" height="55px" width="55px">
+        <h3>Alright: Your day is going very well but its not the best you have ever been</h3>
+    </div>
+    <div style="background-color: rgb(255, 253, 127);">
+        <br>
+        <img src="mid.png.png" height="55px" width="55px">
+        <h3>Amazing: Your day is going okay but you feel bored</h3>
+    </div>
+    <div style="background-color: rgb(255, 195, 127);">
+        <br>
+        <img src="not_good.png.png" height="55px" width="55px">
+        <h3 id="amazing">Amazing: Your day is not going well and you feel tired</h3>
+    </div>
+    <div style="background-color: rgb(255, 142, 127);">
+        <br>
+        <img src="horrible.png.png" height="55px" width="55px">
+        <h3 id="amazing">Amazing: Your day is going horribly and you feel frustrated and annoyed</h3>
+    </div>
+</body>
+
+</html>
